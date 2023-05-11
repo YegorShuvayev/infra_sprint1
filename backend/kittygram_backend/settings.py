@@ -1,9 +1,9 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 
-load_dotenv()
+#load_dotenv()
 DJANGO_SECRET = os.getenv('DJANGO_SECRET')
 DJANGO_DB_NAME = os.getenv('DJANGO_DB_NAME')
 
