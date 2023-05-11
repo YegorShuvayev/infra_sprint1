@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 DJANGO_SECRET = os.getenv('DJANGO_SECRET')
+DJANGO_DB = os.getenv('DJANGO_DB')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -61,7 +62,7 @@ WSGI_APPLICATION = 'kittygram_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / DJANGO_DB,
     }
 }
 
